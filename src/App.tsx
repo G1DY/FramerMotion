@@ -1,4 +1,4 @@
-import Gestures from "./gestures";
+import AnimatedShape from "./AnimatedShape";
 
 const App = () => {
   return (
@@ -6,7 +6,9 @@ const App = () => {
       {/* <PulsingButton /> */}
       {/* <BouncingLoader /> */}
       {/* <FlippingCard /> */}
-      <Gestures />
+      {/* <Gestures /> */}
+      {/* <Images /> */}
+      <AnimatedShape />
     </div>
   );
 };
