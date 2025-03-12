@@ -4,10 +4,11 @@ const App = () => {
   return (
     <motion.div
       className="box"
-      initial={{ x: 0 }}
-      animate={{ x: 200, scale: 2 }}
-      // transition={{ duration: 5 }}
-      transition={{ duration: 5, delay: 2, ease: "linear" }}
+      animate={{
+        scale: [1, 2, 3, 2, 1],
+        rotate: [0, 90, 180, 270, 180, 90, 0],
+      }}
+      transition={{ duration: 5, delay: 2, ease: "easeInOut" }}
     ></motion.div>
   );
 };
