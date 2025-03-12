@@ -1,9 +1,10 @@
-import PulsingButton from "./PulsingButton";
+import BouncingLoader from "./BouncingLoader";
 
 const App = () => {
   return (
-    <div className="justify-center flex py-[15rem] ">
-      <PulsingButton />
+    <div>
+      {/* <PulsingButton /> */}
+      <BouncingLoader />
     </div>
   );
 };
