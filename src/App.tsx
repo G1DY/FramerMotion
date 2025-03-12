@@ -1,10 +1,11 @@
-import BouncingLoader from "./BouncingLoader";
+import FlippingCard from "./FlippingCard";
 
 const App = () => {
   return (
     <div>
       {/* <PulsingButton /> */}
-      <BouncingLoader />
+      {/* <BouncingLoader /> */}
+      <FlippingCard />
     </div>
   );
 };
