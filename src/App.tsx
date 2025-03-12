@@ -1,14 +1,15 @@
-import AnimatedShape from "./AnimatedShape";
+import Exampleone from "./StaggerAnimations/exampleone";
 
 const App = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center">
       {/* <PulsingButton /> */}
       {/* <BouncingLoader /> */}
       {/* <FlippingCard /> */}
       {/* <Gestures /> */}
       {/* <Images /> */}
-      <AnimatedShape />
+      {/* <AnimatedShape /> */}
+      <Exampleone />
     </div>
   );
 };
