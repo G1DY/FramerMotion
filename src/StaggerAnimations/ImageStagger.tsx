@@ -35,7 +35,7 @@ const ImageStagger = () => {
         onClick={handleClick}
         className="mt-[2rem] p-4 rounded-lg bg-yellow-500 text-black font-bold"
       >
-        {showImage ? "show images" : "hide images"}
+        {showImage ? "hide images" : "show images"}
       </motion.button>
       <motion.div
         className="flex"
