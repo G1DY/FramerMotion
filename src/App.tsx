@@ -4,7 +4,10 @@ const App = () => {
   return (
     <motion.div
       className="box"
-      animate={{ rotate: 60, scale: 2, x: 200, y: 200 }}
+      initial={{ x: 0 }}
+      animate={{ x: 200, scale: 2 }}
+      // transition={{ duration: 5 }}
+      transition={{ duration: 5, delay: 2, ease: "linear" }}
     ></motion.div>
   );
 };
