@@ -1,12 +1,1 @@
 @import "tailwindcss";
-
-body {
-  height: 100vh;
-}
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: teal;
-  margin: auto;
-  margin-top: 15%;
-}
