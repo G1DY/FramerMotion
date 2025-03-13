@@ -1,8 +1,9 @@
+import FadingComponent from "./FadingComponent";
 import SequentialAnimation from "./SequentialAnimation";
 
 const App = () => {
   return (
-    <div className="justify-center flex min-h-screen">
+    <div className="justify-center flex h-screen items-center">
       {/* <PulsingButton /> */}
       {/* <BouncingLoader /> */}
       {/* <FlippingCard /> */}
@@ -16,7 +17,8 @@ const App = () => {
       {/* <SpinningIcon /> */}
       {/* <Skew /> */}
       {/* <ScaleRotate /> */}
-      <SequentialAnimation />
+      {/* <SequentialAnimation /> */}
+      <FadingComponent />
     </div>
   );
 };
