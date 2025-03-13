@@ -1,8 +1,8 @@
-import SidebarAnimation from "./SidebarAnimation";
+import Modal from "./Modal";
 
 const App = () => {
   return (
-    <div>
+    <div className="justify-center flex items-center min-h-screen">
       {/* <PulsingButton /> */}
       {/* <BouncingLoader /> */}
       {/* <FlippingCard /> */}
@@ -18,7 +18,8 @@ const App = () => {
       {/* <ScaleRotate /> */}
       {/* <SequentialAnimation /> */}
       {/* <FadingComponent /> */}
-      <SidebarAnimation />
+      {/* <SidebarAnimation /> */}
+      <Modal />
     </div>
   );
 };

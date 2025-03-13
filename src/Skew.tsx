@@ -8,7 +8,7 @@ const Skew = () => {
       className="h-20 w-20 rounded m-4 bg-teal-400 text-center items-center p-6"
       onClick={() => setIsSkewed(!isSkewed)}
       animate={{ skewX: isSkewed ? 20 : 0 }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 0.5 }}
     >
       skew
     </motion.div>

@@ -6,7 +6,7 @@ const WhileInView = () => {
       <h1 className="text-3xl text-center mb-4">
         Scroll Down to see the animation
       </h1>
-      <div className="h-screen flex">
+      <div className="h-screen">
         <AnimationCard />
       </div>
     </div>
