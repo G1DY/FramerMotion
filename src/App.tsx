@@ -1,9 +1,8 @@
-import FadingComponent from "./FadingComponent";
-import SequentialAnimation from "./SequentialAnimation";
+import SidebarAnimation from "./SidebarAnimation";
 
 const App = () => {
   return (
-    <div className="justify-center flex h-screen items-center">
+    <div>
       {/* <PulsingButton /> */}
       {/* <BouncingLoader /> */}
       {/* <FlippingCard /> */}
@@ -18,7 +17,8 @@ const App = () => {
       {/* <Skew /> */}
       {/* <ScaleRotate /> */}
       {/* <SequentialAnimation /> */}
-      <FadingComponent />
+      {/* <FadingComponent /> */}
+      <SidebarAnimation />
     </div>
   );
 };
