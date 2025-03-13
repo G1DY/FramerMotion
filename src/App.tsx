@@ -1,4 +1,4 @@
-import Modal from "./Modal";
+import ResponsiveButton from "./ViewPort/ResponsiveButton";
 
 const App = () => {
   return (
@@ -19,7 +19,8 @@ const App = () => {
       {/* <SequentialAnimation /> */}
       {/* <FadingComponent /> */}
       {/* <SidebarAnimation /> */}
-      <Modal />
+      {/* <Modal /> */}
+      <ResponsiveButton />
     </div>
   );
 };
