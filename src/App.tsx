@@ -1,4 +1,4 @@
-import WhileInView from "./ViewPort/WhileInView";
+import Usescroll from "./UseScroll/Usescroll";
 
 const App = () => {
   return (
@@ -11,7 +11,8 @@ const App = () => {
       {/* <AnimatedShape /> */}
       {/* <Exampleone /> */}
       {/* <ImageStagger /> */}
-      <WhileInView />
+      {/* <WhileInView /> */}
+      <Usescroll />
     </div>
   );
 };
