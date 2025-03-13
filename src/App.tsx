@@ -1,4 +1,4 @@
-import ImageStagger from "./StaggerAnimations/ImageStagger";
+import WhileInView from "./ViewPort/WhileInView";
 
 const App = () => {
   return (
@@ -10,7 +10,8 @@ const App = () => {
       {/* <Images /> */}
       {/* <AnimatedShape /> */}
       {/* <Exampleone /> */}
-      <ImageStagger />
+      {/* <ImageStagger /> */}
+      <WhileInView />
     </div>
   );
 };
