@@ -1,8 +1,10 @@
+import Skew from "./Skew";
+import SpinningIcon from "./SpinningIcon";
 import Usescroll from "./UseScroll/Usescroll";
 
 const App = () => {
   return (
-    <div>
+    <div className="justify-center flex items-center min-h-screen">
       {/* <PulsingButton /> */}
       {/* <BouncingLoader /> */}
       {/* <FlippingCard /> */}
@@ -12,7 +14,9 @@ const App = () => {
       {/* <Exampleone /> */}
       {/* <ImageStagger /> */}
       {/* <WhileInView /> */}
-      <Usescroll />
+      {/* <Usescroll /> */}
+      {/* <SpinningIcon /> */}
+      <Skew />
     </div>
   );
 };
