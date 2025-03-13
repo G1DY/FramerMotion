@@ -1,11 +1,8 @@
-import ScaleRotate from "./ScaleRotate";
-import Skew from "./Skew";
-import SpinningIcon from "./SpinningIcon";
-import Usescroll from "./UseScroll/Usescroll";
+import SequentialAnimation from "./SequentialAnimation";
 
 const App = () => {
   return (
-    <div className="justify-center flex items-center min-h-screen">
+    <div className="justify-center flex min-h-screen">
       {/* <PulsingButton /> */}
       {/* <BouncingLoader /> */}
       {/* <FlippingCard /> */}
@@ -18,7 +15,8 @@ const App = () => {
       {/* <Usescroll /> */}
       {/* <SpinningIcon /> */}
       {/* <Skew /> */}
-      <ScaleRotate />
+      {/* <ScaleRotate /> */}
+      <SequentialAnimation />
     </div>
   );
 };
