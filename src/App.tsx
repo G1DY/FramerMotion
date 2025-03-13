@@ -1,4 +1,4 @@
-import ResponsiveButton from "./ViewPort/ResponsiveButton";
+import Toaster from "./Transformations/Toaster";
 
 const App = () => {
   return (
@@ -20,7 +20,9 @@ const App = () => {
       {/* <FadingComponent /> */}
       {/* <SidebarAnimation /> */}
       {/* <Modal /> */}
-      <ResponsiveButton />
+      {/* <ResponsiveButton /> */}
+      {/* <Accordian /> */}
+      <Toaster />
     </div>
   );
 };
