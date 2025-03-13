@@ -18,7 +18,12 @@ const SidebarAnimation = () => {
         initial={{ x: "0%" }}
         animate={{ x: isOpen ? "0%" : "-100%" }}
         transition={{ duration: 0.5 }}
-      ></motion.div>
+      >
+        <h1 className="text-amber-950 text-cente font-bold p-2 items-center pl-20 text-lg">
+          SideBar
+        </h1>
+        <p className="text-lg text-gray-900">This is a sidebar component</p>
+      </motion.div>
     </div>
   );
 };
