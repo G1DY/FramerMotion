@@ -6,7 +6,7 @@ const ResponsiveButton = () => {
         <motion.button
           className="bg-teal-500 rounded transition-transform cursor-pointer duration-300 p-2 ease-in-out"
           whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.5 }}
+          whileTap={{ scale: 2 }}
         >
           Button
         </motion.button>
