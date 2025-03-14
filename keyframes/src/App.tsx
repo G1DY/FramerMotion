@@ -1,5 +1,5 @@
 import DraggableCard from "./Gestures/DraggableCard";
-import OnOffButton from "./Variants/OnOffButton";
+import DragRotation from "./Gestures/DragRotation";
 
 const App = () => {
   return (
@@ -8,7 +8,8 @@ const App = () => {
       {/* <SidebarCollapse /> */}
       {/* <ToolTip /> */}
       {/* <OnOffButton /> */}
-      <DraggableCard />
+      {/* <DraggableCard /> */}
+      <DragRotation />
     </div>
   );
 };
