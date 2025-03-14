@@ -1,9 +1,9 @@
-import PulsingButton from "./KeyFrames/PulsingButton";
+import ColorChange from "./KeyFrames/ColorChange";
 
 const App = () => {
   return (
     <div className="relative justify-center flex items-center h-screen w-screen">
-      <PulsingButton />
+      <ColorChange />
     </div>
   );
 };
