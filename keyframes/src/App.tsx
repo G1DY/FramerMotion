@@ -1,6 +1,4 @@
-import DragableGallery from "./Gestures/DragableGallery";
-import LongPress from "./Gestures/LongPress";
-import TapToChangeColor from "./Gestures/TapToChangeColor";
+import StaggerListItems from "./Stagger/StaggerListItems";
 
 const App = () => {
   return (
@@ -13,7 +11,8 @@ const App = () => {
       {/* <DragRotation /> */}
       {/* <TapToChangeColor /> */}
       {/* <LongPress /> */}
-      <DragableGallery />
+      {/* <DragableGallery /> */}
+      <StaggerListItems />
     </div>
   );
 };
