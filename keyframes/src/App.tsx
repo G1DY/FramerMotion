@@ -1,11 +1,12 @@
-import ToolTip from "./Variants/ToolTip";
+import OnOffButton from "./Variants/OnOffButton";
 
 const App = () => {
   return (
     <div className="h-screen justify-center items-center flex">
       {/* <FadeInComponent /> */}
       {/* <SidebarCollapse /> */}
-      <ToolTip />
+      {/* <ToolTip /> */}
+      <OnOffButton />
     </div>
   );
 };
