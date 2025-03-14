@@ -1,3 +1,4 @@
+import LongPress from "./Gestures/LongPress";
 import TapToChangeColor from "./Gestures/TapToChangeColor";
 
 const App = () => {
@@ -9,7 +10,8 @@ const App = () => {
       {/* <OnOffButton /> */}
       {/* <DraggableCard /> */}
       {/* <DragRotation /> */}
-      <TapToChangeColor />
+      {/* <TapToChangeColor /> */}
+      <LongPress />
     </div>
   );
 };
