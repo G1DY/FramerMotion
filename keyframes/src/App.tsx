@@ -1,5 +1,4 @@
-import DraggableCard from "./Gestures/DraggableCard";
-import DragRotation from "./Gestures/DragRotation";
+import TapToChangeColor from "./Gestures/TapToChangeColor";
 
 const App = () => {
   return (
@@ -9,7 +8,8 @@ const App = () => {
       {/* <ToolTip /> */}
       {/* <OnOffButton /> */}
       {/* <DraggableCard /> */}
-      <DragRotation />
+      {/* <DragRotation /> */}
+      <TapToChangeColor />
     </div>
   );
 };
