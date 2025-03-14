@@ -1,3 +1,4 @@
+import DraggableCard from "./Gestures/DraggableCard";
 import OnOffButton from "./Variants/OnOffButton";
 
 const App = () => {
@@ -6,7 +7,8 @@ const App = () => {
       {/* <FadeInComponent /> */}
       {/* <SidebarCollapse /> */}
       {/* <ToolTip /> */}
-      <OnOffButton />
+      {/* <OnOffButton /> */}
+      <DraggableCard />
     </div>
   );
 };
