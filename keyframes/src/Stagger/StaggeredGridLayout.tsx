@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Items = [
   "Item 1",
@@ -19,28 +19,30 @@ const staggeredVariants = {
 
 const StaggeredGridLayout = () => {
   return (
-    <motion.div
-      className="grid grid-cols-3 gap-4"
-      initial="hidden"
-      animate="visible"
-      variants={{
-        visible: {
-          transition: {
-            staggerChildren: 1,
+    <AnimatePresence>
+      <motion.div
+        className="grid grid-cols-3 gap-4"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          visible: {
+            transition: {
+              staggerChildren: 0.5,
+            },
           },
-        },
-      }}
-    >
-      {Items.map((item, index) => (
-        <motion.div
-          key={index}
-          className="p-2 bg-gray-300 rounded text-white"
-          variants={staggeredVariants}
-        >
-          {item}
-        </motion.div>
-      ))}
-    </motion.div>
+        }}
+      >
+        {Items.map((item, index) => (
+          <motion.div
+            key={index}
+            className="p-4 bg-gray-300 rounded text-white font-bold"
+            variants={staggeredVariants}
+          >
+            {item}
+          </motion.div>
+        ))}
+      </motion.div>
+    </AnimatePresence>
   );
 };
 export default StaggeredGridLayout;
