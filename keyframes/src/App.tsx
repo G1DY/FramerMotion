@@ -1,4 +1,4 @@
-import StaggeredGridLayout from "./Stagger/StaggeredGridLayout";
+import StaggeredText from "./Stagger/StaggeredText";
 
 const App = () => {
   return (
@@ -14,7 +14,8 @@ const App = () => {
       {/* <DragableGallery /> */}
       {/* <StaggerListItems /> */}
       {/* <StaggeredImages /> */}
-      <StaggeredGridLayout />
+      {/* <StaggeredGridLayout /> */}
+      <StaggeredText />
     </div>
   );
 };
