@@ -1,9 +1,10 @@
-import FadeInComponent from "./Variants/FadeInComponent";
+import SidebarCollapse from "./Variants/SidebarCollapse";
 
 const App = () => {
   return (
-    <div className="relative justify-center flex items-center h-screen w-screen">
-      <FadeInComponent />
+    <div className="h-screen justify-center items-center flex">
+      {/* <FadeInComponent /> */}
+      <SidebarCollapse />
     </div>
   );
 };
