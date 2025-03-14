@@ -1,3 +1,4 @@
+import DragableGallery from "./Gestures/DragableGallery";
 import LongPress from "./Gestures/LongPress";
 import TapToChangeColor from "./Gestures/TapToChangeColor";
 
@@ -11,7 +12,8 @@ const App = () => {
       {/* <DraggableCard /> */}
       {/* <DragRotation /> */}
       {/* <TapToChangeColor /> */}
-      <LongPress />
+      {/* <LongPress /> */}
+      <DragableGallery />
     </div>
   );
 };
