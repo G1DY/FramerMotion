@@ -1,4 +1,4 @@
-import StaggerListItems from "./Stagger/StaggerListItems";
+import StaggeredImages from "./Stagger/StaggeredImages";
 
 const App = () => {
   return (
@@ -12,7 +12,8 @@ const App = () => {
       {/* <TapToChangeColor /> */}
       {/* <LongPress /> */}
       {/* <DragableGallery /> */}
-      <StaggerListItems />
+      {/* <StaggerListItems /> */}
+      <StaggeredImages />
     </div>
   );
 };
