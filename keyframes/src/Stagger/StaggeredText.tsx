@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const Text = "Gideon''Sitienei";
+const Text = "Gideon Sitienei";
 
 const stageredVariant = {
   hidden: { opacity: 0 },
