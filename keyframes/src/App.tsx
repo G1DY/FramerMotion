@@ -1,9 +1,8 @@
-import MovingBox from "./useMotionValue/MovingBox";
-import RotatingBox from "./useMotionValue/RotatingBox";
+import StaggerList from "./WhileInView/StaggerList";
 
 const App = () => {
   return (
-    <div className="h-screen justify-center items-center flex">
+    <div className="h-[150rem] justify-center items-center flex">
       {/* <FadeInComponent /> */}
       {/* <SidebarCollapse /> */}
       {/* <ToolTip /> */}
@@ -20,7 +19,8 @@ const App = () => {
       {/* <DraggableBox /> */}
       {/* <HoverLinkedScale /> */}
       {/* <MovingBox /> */}
-      <RotatingBox />
+      {/* <RotatingBox /> */}
+      <StaggerList />
     </div>
   );
 };
