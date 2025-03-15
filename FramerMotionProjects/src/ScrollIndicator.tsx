@@ -17,7 +17,7 @@ const ScrollIndicator = () => {
         style={{ width: lineWidth, transition: "width 0.2s ease" }}
       />
       <motion.div
-        className="mt-[10px] relative p-4"
+        className="mt-[10px] relative p-4 overflow-hidden"
         style={{ y: textTranslateY, opacity: textOpacity }}
       >
         {[...Array(100)].map((i) => (
