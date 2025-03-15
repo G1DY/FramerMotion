@@ -1,4 +1,4 @@
-import FlippingCard from "./WhileInView/FlippingCard";
+import TimelineAnimation from "./WhileInView/TimelineAnimation";
 
 const App = () => {
   return (
@@ -21,7 +21,8 @@ const App = () => {
       {/* <MovingBox /> */}
       {/* <RotatingBox /> */}
       {/* <StaggerList /> */}
-      <FlippingCard />
+      {/* <FlippingCard /> */}
+      <TimelineAnimation />
     </div>
   );
 };
