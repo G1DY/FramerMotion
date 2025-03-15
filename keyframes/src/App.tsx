@@ -1,4 +1,4 @@
-import TimelineAnimation from "./WhileInView/TimelineAnimation";
+import GridItems from "./WhileInView/GridItems";
 
 const App = () => {
   return (
@@ -22,7 +22,8 @@ const App = () => {
       {/* <RotatingBox /> */}
       {/* <StaggerList /> */}
       {/* <FlippingCard /> */}
-      <TimelineAnimation />
+      {/* <TimelineAnimation /> */}
+      <GridItems />
     </div>
   );
 };
