@@ -1,4 +1,5 @@
 import MovingBox from "./useMotionValue/MovingBox";
+import RotatingBox from "./useMotionValue/RotatingBox";
 
 const App = () => {
   return (
@@ -18,7 +19,8 @@ const App = () => {
       {/* // <StaggeredText /> */}
       {/* <DraggableBox /> */}
       {/* <HoverLinkedScale /> */}
-      <MovingBox />
+      {/* <MovingBox /> */}
+      <RotatingBox />
     </div>
   );
 };
