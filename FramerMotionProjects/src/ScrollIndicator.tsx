@@ -4,31 +4,30 @@ const ScrollIndicator = () => {
   const { scrollYProgress } = useScroll();
 
   const lineWidth = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  const textOpacity = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
-  const textTranslateY = useTransform(
-    scrollYProgress,
-    [0, 1],
-    ["50px", "100px"]
-  );
+
   return (
     <>
       <motion.div
-        className="fixed left-0 top-0 bg-red-500 h-[20px] overflow-hidden"
+        className="fixed left-0 top-0 bg-red-500 h-[20px] w-full z-100"
         style={{ width: lineWidth, transition: "width 0.2s ease" }}
       />
-      <motion.div
-        className="mt-[10px] relative p-4 overflow-hidden"
-        style={{ y: textTranslateY, opacity: textOpacity }}
-      >
-        {[...Array(100)].map((i) => (
-          <p key={i}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            placeat recusandae in nisi excepturi dignissimos cum quisquam vero
-            cupiditate quos dolorum dolores quam nesciunt aut, voluptatem veniam
-            quo. Iste, ipsa?
-          </p>
-        ))}
-      </motion.div>
+      <div>
+        <motion.div className="mt-[10px]">
+          {[...Array(100)].map((_, index) => (
+            <article key={index}>
+              <ol className="list-disc list-inside text-lg text-white">
+                <li className="p-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda quo odio nulla cum exercitationem eveniet, soluta
+                  recusandae ut possimus laudantium quisquam excepturi
+                  distinctio, dolore vitae! Sapiente, nesciunt? Itaque, magni
+                  odio.
+                </li>
+              </ol>
+            </article>
+          ))}
+        </motion.div>
+      </div>
     </>
   );
 };
