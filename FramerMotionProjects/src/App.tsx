@@ -2,7 +2,7 @@ import ScrollIndicator from "./ScrollIndicator";
 
 const App = () => {
   return (
-    <div className="text-2xl font-bold justify-center flex h-screen items-center">
+    <div className="justify-center flex h-[200rem] p-[20px] items-center">
       <ScrollIndicator />
     </div>
   );
