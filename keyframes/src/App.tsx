@@ -1,4 +1,4 @@
-import HoverLinkedScale from "./useMotionValue/HoverLinkedScale";
+import MovingBox from "./useMotionValue/MovingBox";
 
 const App = () => {
   return (
@@ -17,7 +17,8 @@ const App = () => {
       {/* <StaggeredGridLayout /> */}
       {/* // <StaggeredText /> */}
       {/* <DraggableBox /> */}
-      <HoverLinkedScale />
+      {/* <HoverLinkedScale /> */}
+      <MovingBox />
     </div>
   );
 };
