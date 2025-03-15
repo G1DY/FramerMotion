@@ -1,4 +1,4 @@
-import StaggerList from "./WhileInView/StaggerList";
+import FlippingCard from "./WhileInView/FlippingCard";
 
 const App = () => {
   return (
@@ -20,7 +20,8 @@ const App = () => {
       {/* <HoverLinkedScale /> */}
       {/* <MovingBox /> */}
       {/* <RotatingBox /> */}
-      <StaggerList />
+      {/* <StaggerList /> */}
+      <FlippingCard />
     </div>
   );
 };
