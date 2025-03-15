@@ -1,4 +1,4 @@
-import StaggeredText from "./Stagger/StaggeredText";
+import DraggableBox from "./useMotionValue/DraggableBox";
 
 const App = () => {
   return (
@@ -15,7 +15,8 @@ const App = () => {
       {/* <StaggerListItems /> */}
       {/* <StaggeredImages /> */}
       {/* <StaggeredGridLayout /> */}
-      <StaggeredText />
+      {/* // <StaggeredText /> */}
+      <DraggableBox />
     </div>
   );
 };
