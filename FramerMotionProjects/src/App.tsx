@@ -1,9 +1,10 @@
-import ScrollIndicator from "./ScrollIndicator";
+import RotatingButton from "./RotatingButton";
 
 const App = () => {
   return (
-    <div className="justify-center flex h-auto items-center">
-      <ScrollIndicator />
+    <div className="justify-center flex h-screen items-center">
+      {/* <ScrollIndicator /> */}
+      <RotatingButton />
     </div>
   );
 };
