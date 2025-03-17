@@ -2,8 +2,17 @@ import { motion } from "framer-motion";
 
 const RotatingButton = () => {
   return (
-    <motion.div className="relative  rounded-full border-20 border-top-4 p-6 justify-center border-blue-800 flex items-center">
-      <motion.div className="absolute rounded-full border-8 border-top-4 items-center justify-center border-blue-500 p-7"></motion.div>
+    <motion.div
+      className="relative  w-16 h-16 rounded-full border-8 border-t-8 border-solid border-blue-500"
+      animate={{ rotate: 360 }}
+      transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+    >
+      <motion.div
+        className="absolute inset-0 border-8 border-solid border-blue-300 rounded-full"
+        animate={{ opacity: [1, 1.1, 1] }}
+        transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
+        style={{ borderTopColor: "transparent" }}
+      ></motion.div>
     </motion.div>
   );
 };
