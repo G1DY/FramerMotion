@@ -7,6 +7,26 @@ const sidebarVariants = {
   closed: { x: "100%", opacity: 0, scale: 0.8 },
 };
 
+const containerVariants = {
+  open: {
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.1,
+    },
+  },
+  closed: {
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.0,
+    },
+  },
+};
+
+const itemVariants = {
+  open: { opacity: 1, y: 0, scale: 1 },
+  closed: { opacity: 0, y: -20, scale: 0.95 },
+};
+
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
   return (
@@ -28,7 +48,42 @@ const Sidebar = () => {
             <IoMdArrowBack className="h-6 w-6" />
           </button>
           <h2 className="mb-4 text-white text-2xl font-bold">Filters</h2>
-          <div className="space-y-4"></div>
+          <motion.div
+            variants={containerVariants}
+            initial="open"
+            animate={isOpen ? "open" : "closed"}
+            className="space-y-4"
+          >
+            <motion.div variants={itemVariants}>
+              <h4 className="text-2xl font-semibold">Category</h4>
+              <ul>
+                <li>
+                  <label className="inline-flex items-center mt-2">
+                    <input type="checkbox" className="form-checkbox" />
+                    <span className="ml-2">Option 1</span>
+                  </label>
+                </li>
+                <li>
+                  <label className="inline-flex items-center mt-2">
+                    <input type="checkbox" className="form-checkbox" />
+                    <span className="ml-2">Option 2</span>
+                  </label>
+                </li>
+                <li>
+                  <label className="inline-flex items-center mt-2">
+                    <input type="checkbox" className="form-checkbox" />
+                    <span className="ml-2">Option 3</span>
+                  </label>
+                </li>
+                <li>
+                  <label className="inline-flex items-center mt-2">
+                    <input type="checkbox" className="form-checkbox" />
+                    <span className="ml-2">Option 4</span>
+                  </label>
+                </li>
+              </ul>
+            </motion.div>
+          </motion.div>
         </div>
       </motion.div>
     </div>
