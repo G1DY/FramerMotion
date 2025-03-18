@@ -11,7 +11,7 @@ const images = [
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
-  const [showThumbnails, setShowThumbnails] = useState(false);
+  const [showThumbnails, setShowThumbnails] = useState(true);
 
   return (
     <>
@@ -39,6 +39,35 @@ const Carousel = () => {
             </div>
           ))}
         </div>
+        {/* actual images */}
+        <div className="flex">
+          <div className="flex">
+            {images.map((image, index) => (
+              <div key={index} className="min-w-full">
+                <img
+                  src={image}
+                  alt={`Slide ${index + 1}`}
+                  className="w-full"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* buttons */}
+        <button
+          className={`absolute left-4 transform -translate-y-1/2 p-2 transition-opacity duration-300 ${
+            isHovered ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          &#10094;
+        </button>
+        <button
+          className={`absolute left-4 transform -translate-y-1/2 p-2 transition-opacity duration-300 ${
+            isHovered ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          &#10095;
+        </button>
       </div>
     </>
   );
