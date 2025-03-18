@@ -55,7 +55,7 @@ const Sidebar = () => {
             className="space-y-4"
           >
             <motion.div variants={itemVariants}>
-              <h4 className="text-2xl font-semibold">Category</h4>
+              <h4 className="text-lg font-semibold">Category</h4>
               <ul>
                 <li>
                   <label className="inline-flex items-center mt-2">
@@ -82,6 +82,18 @@ const Sidebar = () => {
                   </label>
                 </li>
               </ul>
+              <motion.div variants={itemVariants}>
+                <h3 className="text-lg fonrt font-semibold mt-4">
+                  Price Range
+                </h3>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  step="10"
+                  className="w-full"
+                />
+              </motion.div>
             </motion.div>
           </motion.div>
         </div>
