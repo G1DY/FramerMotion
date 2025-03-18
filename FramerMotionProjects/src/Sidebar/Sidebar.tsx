@@ -83,9 +83,7 @@ const Sidebar = () => {
                 </li>
               </ul>
               <motion.div variants={itemVariants}>
-                <h3 className="text-lg fonrt font-semibold mt-4">
-                  Price Range
-                </h3>
+                <h3 className="text-lg font-semibold mt-4">Price Range</h3>
                 <input
                   type="range"
                   min="0"
@@ -93,6 +91,66 @@ const Sidebar = () => {
                   step="10"
                   className="w-full"
                 />
+              </motion.div>
+              <motion.div variants={itemVariants}>
+                <h3 className="text-lg font-semibold mt-2">Rating</h3>
+                <ul>
+                  <li>
+                    <label className="inline-flex items-center mt-2">
+                      <input
+                        type="radio"
+                        name="rating"
+                        value="1"
+                        className="form-radio"
+                      />
+                      <span className="ml-2">1 star</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label className="inline-flex items-center mt-2">
+                      <input
+                        type="radio"
+                        name="rating"
+                        value="2"
+                        className="form-radio"
+                      />
+                      <span className="ml-2">2 star</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label className="inline-flex items-center mt-2">
+                      <input
+                        type="radio"
+                        name="rating"
+                        value="3"
+                        className="form-radio"
+                      />
+                      <span className="ml-2">3 star</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label className="inline-flex items-center mt-2">
+                      <input
+                        type="radio"
+                        name="rating"
+                        value="4"
+                        className="form-radio"
+                      />
+                      <span className="ml-2">4 star</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label className="inline-flex items-center mt-2">
+                      <input
+                        type="radio"
+                        name="rating"
+                        value="5"
+                        className="form-radio"
+                      />
+                      <span className="ml-2">5 star</span>
+                    </label>
+                  </li>
+                </ul>
               </motion.div>
             </motion.div>
           </motion.div>
