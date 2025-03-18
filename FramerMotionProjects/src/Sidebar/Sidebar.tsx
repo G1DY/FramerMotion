@@ -8,7 +8,7 @@ const sidebarVariants = {
 };
 
 const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   return (
     <div>
       {/* backdrop */}
@@ -21,10 +21,13 @@ const Sidebar = () => {
         className="h-full w-64 bg-gray-800 fixed top-0 left-0 shadow-lg"
       >
         <div className="p-4">
-          <button className="absolute top-4 right-4 z-10 p-2 text-white bg-gray-600 rounded-full focus:outline-none">
+          <button
+            onClick={() => setIsOpen(false)}
+            className="absolute top-4 right-4 z-10 p-2 text-white bg-gray-600 rounded-full focus:outline-none"
+          >
             <IoMdArrowBack className="h-6 w-6" />
           </button>
-          <h1 className="mb-4 text-white text-2xl font-bold">Filters</h1>
+          <h2 className="mb-4 text-white text-2xl font-bold">Filters</h2>
           <div className="space-y-4"></div>
         </div>
       </motion.div>
