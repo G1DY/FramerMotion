@@ -9,7 +9,7 @@ interface componentProps {
 const DraggableCard = ({ children, style }: componentProps) => {
   return (
     <motion.div
-      className="w-52 h-72 m-2 p-5 rounded-xl justify-center flex items-center text-white text-2xl "
+      className="w-52 h-72 m-2 p-5 rounded-xl shadow-lg justify-center flex items-center text-white text-2xl "
       style={style}
       drag
       dragConstraints={{ left: -200, right: 200, top: -200, bottom: 200 }}
