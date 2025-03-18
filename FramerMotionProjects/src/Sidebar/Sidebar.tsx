@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { IoMdArrowBack } from "react-icons/io";
+import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
 
 const sidebarVariants = {
   open: { x: 0, opacity: 1, scale: 1 },
@@ -156,6 +156,18 @@ const Sidebar = () => {
           </motion.div>
         </div>
       </motion.div>
+      <div>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="absolute top-4 right-4 z-10 p-2 bg-gray-800 text-white rounded-full focus:outline-none"
+        >
+          {isOpen ? (
+            <IoMdArrowBack className="h-6 w-6" />
+          ) : (
+            <IoMdArrowForward className="h-6 w-6" />
+          )}
+        </button>
+      </div>
     </div>
   );
 };
