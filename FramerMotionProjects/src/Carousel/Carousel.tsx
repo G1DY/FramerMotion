@@ -13,6 +13,22 @@ const Carousel = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [showThumbnails, setShowThumbnails] = useState(true);
 
+  const prevSlide = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
+  };
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const selectSlide = (index: number) => {
+    setCurrentIndex(index);
+    setShowThumbnails(true);
+    window.setTimeout(() => setShowThumbnails(false), 5000);
+  };
+
   return (
     <>
       <div className="relative w-[50%] rounded-lg overflow-hidden">
@@ -25,6 +41,7 @@ const Carousel = () => {
           {images.map((image, index) => (
             <div
               key={index}
+              onClick={() => selectSlide(index)}
               className={`w-[10rem] h-[5rem] mt-[2rem] cursor-pointer border-2 rounded-lg overflow-hidden ${
                 currentIndex === index
                   ? "border-blue-500"
@@ -40,8 +57,17 @@ const Carousel = () => {
           ))}
         </div>
         {/* actual images */}
-        <div className="flex">
-          <div className="flex">
+        <motion.div
+          className="flex"
+          onMouseEnter={() => setIsHovered(false)}
+          onMouseLeave={() => setIsHovered(true)}
+        >
+          <motion.div
+            className="flex"
+            initial={{ x: "-100%" }}
+            animate={{ x: `${-currentIndex * 100}%` }}
+            transition={{ duration: 1 }}
+          >
             {images.map((image, index) => (
               <div key={index} className="min-w-full">
                 <img
@@ -51,10 +77,11 @@ const Carousel = () => {
                 />
               </div>
             ))}
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
         {/* buttons */}
         <button
+          onClick={prevSlide}
           className={`absolute left-4 transform -translate-y-1/2 p-2 transition-opacity duration-300 ${
             isHovered ? "opacity-100" : "opacity-0"
           }`}
@@ -62,7 +89,8 @@ const Carousel = () => {
           &#10094;
         </button>
         <button
-          className={`absolute left-4 transform -translate-y-1/2 p-2 transition-opacity duration-300 ${
+          onClick={nextSlide}
+          className={`absolute right-4 transform -translate-y-1/2 p-2 transition-opacity duration-300 ${
             isHovered ? "opacity-100" : "opacity-0"
           }`}
         >
