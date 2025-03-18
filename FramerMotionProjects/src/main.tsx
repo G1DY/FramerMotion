@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./Carousel/index.css";
-import App from "./Carousel/App";
+import "./index.css";
+import App from "./Sidebar/App";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
