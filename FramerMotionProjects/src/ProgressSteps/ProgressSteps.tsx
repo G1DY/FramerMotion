@@ -48,7 +48,32 @@ const ProgressSteps = () => {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.3 }}
-      ></motion.div>
+      >
+        <h2 className="text-xl font-bold">{steps[currentStep].title}</h2>
+        <p className="mt-2">{steps[currentStep].description}</p>
+        <motion.div>
+          <div className="flex mt-5 space-x-4 justify-between">
+            <button
+              className={`px-4 py-2 text-white bg-blue-500 rounded ${
+                currentStep === 0 ? "opacity-50 cursor-not-allowed" : ""
+              }`}
+              disabled={currentStep === 0}
+            >
+              Previous
+            </button>
+            <button
+              className={`px-4 py-2 text-white bg-blue-500 rounded ${
+                currentStep === steps.length - 1
+                  ? "opacity-50 cursor-not-allowed"
+                  : ""
+              }`}
+              disabled={currentStep === steps.length - 1}
+            >
+              Next
+            </button>
+          </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };
