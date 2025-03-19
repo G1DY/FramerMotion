@@ -41,6 +41,14 @@ const ProgressSteps = () => {
           </div>
         ))}
       </div>
+      <motion.div
+        className="text-center p-5 w-[40rem] h-[10rem] border rounded-lg shadow-md"
+        key={currentStep}
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        transition={{ duration: 0.3 }}
+      ></motion.div>
     </div>
   );
 };
