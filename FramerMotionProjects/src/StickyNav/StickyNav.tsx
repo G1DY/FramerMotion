@@ -60,6 +60,7 @@ const StickyNav = () => {
               <span className="border border-black px-2 text-xs rounded-full">
                 Apple
               </span>
+              <p className="ml-4">Mackbook Pro</p>
             </motion.div>
           </motion.div>
         </div>
