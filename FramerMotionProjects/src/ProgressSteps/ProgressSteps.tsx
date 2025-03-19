@@ -10,6 +10,18 @@ const steps = [
 
 const ProgressSteps = () => {
   const [currentStep, setCurrentStep] = useState(0);
+
+  const handlePrev = () => {
+    if (currentStep > 0) {
+      setCurrentStep(currentStep - 1);
+    }
+  };
+
+  const handleNext = () => {
+    if (currentStep < steps.length - 1) {
+      setCurrentStep(currentStep + 1);
+    }
+  };
   return (
     <div className="flex flex-col items-center p-5">
       <div className="relative flex justify-between mb-5 w-[40rem]">
@@ -54,6 +66,7 @@ const ProgressSteps = () => {
         <motion.div>
           <div className="flex mt-5 space-x-4 justify-between">
             <button
+              onClick={handlePrev}
               className={`px-4 py-2 text-white bg-blue-500 rounded ${
                 currentStep === 0 ? "opacity-50 cursor-not-allowed" : ""
               }`}
@@ -62,6 +75,7 @@ const ProgressSteps = () => {
               Previous
             </button>
             <button
+              onClick={handleNext}
               className={`px-4 py-2 text-white bg-blue-500 rounded ${
                 currentStep === steps.length - 1
                   ? "opacity-50 cursor-not-allowed"
