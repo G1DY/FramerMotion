@@ -47,6 +47,21 @@ const StickyNav = () => {
               </a>
             </div>
           </div>
+          <motion.div
+            className="flex flex-col py-6"
+            variants={expandRowVariants}
+          >
+            <span className="block w-full h-px bg-gray-300"></span>
+            <motion.div
+              variants={expandRowVariants}
+              custom={1}
+              className="flex items-center mt-5"
+            >
+              <span className="border border-black px-2 text-xs rounded-full">
+                Apple
+              </span>
+            </motion.div>
+          </motion.div>
         </div>
       </motion.div>
     </div>
